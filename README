@@ -1,0 +1,32 @@
+# Intel 8080 Emulator
+
+## Specs
+
+Data bus width: 8 bits
+Address bus width: 16 bits
+
+## Registers
+
+### 8-bit
+
+8080 offers the following 8-bit registers: A (primary accumulator), B, C, D, E, H, L
+
+And also, an 8-bit flag register (F), with the following bits:
+- 7th bit: S - Sign Flag
+- 6th bit: Z - Zero Flag
+- 5th bit: 0 - Not used, always zero
+- 4th bit: A - Auxiliary Carry Flag (AC)
+- 3rd bit: 0 - Not used, always zero
+- 2nd bit: P - Parity Flag
+- 1st bit: 1 - Not used, always one
+- 0th bit: C - Carry Flag
+
+### 16-bit
+
+The previously mentioned 8-bit registers can be used as pairs, yielding in a 16-bit sized registers: BC (B), DE (D), HL (H)
+
+Stack Pointer (SP) register - mantains a pointer to the top of the memory stack
+
+Porgram Counter (PC) register - pointer to the next instruction to be fetched
+
+The register pair consisting of the A and F register is also reffered to as PSW
