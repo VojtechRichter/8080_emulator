@@ -1,0 +1,1 @@
+#define ADDR_BUS_CAPACITY 256 * 256
